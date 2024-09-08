@@ -1,34 +1,243 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>yo</title>
-    <link rel="icon" type="image/x-icon" href="fav-kl.svg">
-    <meta name="robots" content="noindex">
-</head>
-
-<body>
-    <p>yo</p>
-</body>
-
-</html>
-<style>
-    * {
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Conner Chicoine</title>
+    <style>
+      :root {
+        --content-max-width: 1080px;
+      }
+      * {
+        box-sizing: border-box;
         padding: 0;
         margin: 0;
-        box-sizing: border-box;
-    }
-
-    body {
+      }
+      body {
+        max-width: var(--content-max-width);
         background-color: #0f0f0f;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100dvh;
-    }
-
-    p {
-        color: #fff;
         font-family: monospace;
-    }
-</style>
+        color: white;
+        margin: auto;
+        padding: 1rem;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        .title {
+          flex-grow: 1;
+        }
+      }
+      @media only screen and (max-width: 980px) {
+        header {
+          display: block;
+        }
+        .image {
+          display: none;
+        }
+      }
+      section {
+        margin-top: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2,
+      h3 {
+        font-size: 1.25rem;
+      }
+      h4 {
+        font-size: 1.125rem;
+      }
+      h5 {
+        font-size: 1rem;
+      }
+      a {
+        color: white;
+      }
+      article {
+        margin-top: 0.5rem;
+      }
+      .meta {
+        margin-bottom: 0.25rem;
+      }
+      .desc {
+        margin-top: 0.25rem;
+        text-align: justify;
+      }
+      h3 {
+        border-bottom: 2px solid white;
+      }
+      ul {
+        padding: 1rem;
+      }
+      img {
+        max-width: 100px;
+        border-radius: 999px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <div class="image">
+          <img src="/portrait.webp" />
+        </div>
+        <div class="title">
+          <h1>Conner Chicoine</h1>
+          <h2>Sr. Website Specialist</h2>
+        </div>
+        <div class="contact">
+          <p>Saskatoon, SK, CA</p>
+          <p>
+            Email:
+            <a href="mailto:cchicoine@1mail.win">cchicoine@1mail.win</a>
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/connerchicoine/"
+              >/in/connerchicoine</a
+            >
+          </p>
+        </div>
+      </header>
+      <section>
+        <h3>Professional Experience</h3>
+        <article>
+          <div class="meta">
+            <h4>Sr. Website Specialist, Vendasta Technologies</h4>
+            <h5>2019 - Present</h5>
+          </div>
+          <p class="desc">
+            My experience with web technologies and pursuant nature lead me to
+            pioneer an internal role for myself as a Website Specialist. I've
+            played critical and authorative roles in growing this department
+            from myself to over a dozen individuals. The department is now the
+            most profitable team within my division.
+          </p>
+          <p class="desc">
+            Throughout the last five years in the corporate website sector, I've
+            serviced thousands of websites to-date while communicating directly
+            with their respective partners and clients. Services that I have
+            provided include, but are not limited to: installing e-commerce
+            solutions, restoring website outages, cleaning hacked websites of
+            malicious code, cross-server migrations, and more.
+          </p>
+          <p class="desc">
+            I was immediately promoted following the introduction of
+            senior-level roles. I continue to play an integral role in my team's
+            success and continued growth.
+          </p>
+        </article>
+        <article>
+          <div class="meta">
+            <h4>Marketing Specialist, Vendasta Technologies</h4>
+            <h5>2017 - 2019</h5>
+          </div>
+          <p class="desc">
+            I helped hundreds of local marketing agencies provide online
+            solutions to their local markets. These solutions included software
+            tools to help small businesses manage their reputation, social media
+            presence, websites, and more. I personally managed up to 30 partner
+            relationships at any given time.
+          </p>
+        </article>
+        <article>
+          <div class="meta">
+            <h4>General Labour, FAST Trucking Service LTD</h4>
+            <h5>2014 - 2016</h5>
+          </div>
+          <p class="desc">
+            This physically-demanding role mandated strong communication skills
+            with heavy equipment operators to ensure the safety of myself and
+            others.
+          </p>
+        </article>
+        <article>
+          <div class="meta">
+            <h4>CSR, BMO Bank of Montreal</h4>
+            <h5>2013 - 2014</h5>
+          </div>
+          <p class="desc">
+            Relevant duties included providing customers with a pleasant banking
+            experience and helping them find alternative, satisfactory solutions
+            when my role did not allow me to do so effectively.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h3>Key Skillsets</h3>
+        <article>
+          <div class="meta">
+            <h4>Web Development</h4>
+          </div>
+          <article>
+            <div class="meta">
+              <h5>Front-end Technologies</h5>
+            </div>
+            <p class="desc">
+              HTML, CSS, JavaScript, JQuery, React, Astro, and a strong eye for
+              front-end design. I've worked with WordPress for the last 5 years
+              while utilizing the Divi theme daily.
+            </p>
+          </article>
+          <article>
+            <div class="meta">
+              <h5>Back-end Technologies</h5>
+            </div>
+            <p class="desc">
+              Java, Kotlin, WordPress/PHP (WordPress plugin development), MySQL,
+              Docker, DNS Management, Linux (Ubuntu) Server Management
+            </p>
+          </article>
+          <article>
+            <div class="meta">
+              <h5>Software and IDEs</h5>
+            </div>
+            <p class="desc">
+              Visual Studio Code, IntelliJ Idea, Eclipse IDE, Adobe Product
+              Suite
+            </p>
+          </article>
+          <article>
+            <div class="meta">
+              <h5>Complimentary Skills</h5>
+            </div>
+            <p class="desc">Photoshop, video editing, and creative writing.</p>
+          </article>
+        </article>
+      </section>
+      <section>
+        <h3>About Me</h3>
+        <article>
+          <div class="meta">
+            <h4>Strong Communicator</h4>
+          </div>
+          <p class="desc">
+            My experience in client-first roles have allowed me to develop an
+            adamant communicative skillset both online and offline.
+          </p>
+          <p class="desc">
+            My confident deliverance has built and saved many partner and client
+            relationships throughout my career.
+          </p>
+        </article>
+        <article>
+          <div class="meta">
+            <h4>Driven by Results</h4>
+          </div>
+          <p class="desc">
+            I am a detailed-oriented individual and my priority is client
+            satisfaction.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
